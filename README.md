@@ -16,7 +16,7 @@ Why is this tool needed? Because FCPA offers hundreds of potential camps to regi
 
 At first glance it the fields look reasonable. We should be able to narrow down the list of available camps and register for one. Let's see what happens if I try to find a camp for my 6 year old son for the two days after New Years Day (Jan 2-3).
 
-[fcap_results.jpeg]
+![](https://github.com/dlfelps/camp-little-scrape/blob/cb453b1a43840bc5f3bebcaf8e4ae50c8552d4a8/screenshots/fcpa_results.jpeg)
 
 Due to the broad age range filter (6-12 yrs old), only one of the first six camps listed in the results are appropriate for a 6 year old. And the one camp that is appropriate is for January 20 because the filter only allows you to specify the date "starting on or after". So the best I can do is limit results from a starting date to the end of that month. This is especially frustrating when trying to book camps over the summer break. Typically I want to book one camp per week for the entire summer. To do this on the FCPA website I can change the "starting on or after" date, but for the first week in a month I get all camps in that month (which could be more than 100 sessions!). 
 
@@ -38,7 +38,7 @@ I would like to build a tool that can output a tailored report to facilitate sel
 
 #### Process overview
 
-[camp-scraper.svg]
+![](https://github.com/dlfelps/camp-little-scrape/blob/cb453b1a43840bc5f3bebcaf8e4ae50c8552d4a8/screenshots/camp%20scraper-2024-11-21-162211.svg)
 
 The overall process is described in the flowchart above. I will demonstrate each step below in detail, but at a high level, the tool completes a series of steps to:
 1. Scrape camp links
@@ -59,7 +59,7 @@ This step produces a ```links.txt``` file containing all the camp session links.
 ##### Step 2 - Scrape camp details
 Steps 2-4 all use the command line gui provided by the camps.py file. It is built using [Typer](https://typer.tiangolo.com/). View the list of possible commands by calling ```python camps.py --help``` 
 
-[gui_help.png]
+![](https://github.com/dlfelps/camp-little-scrape/blob/cb453b1a43840bc5f3bebcaf8e4ae50c8552d4a8/screenshots/gui_help.PNG)
 
 Step 2 is initiated by calling ```python camps.py details```. This step scrapes the camp details (e.g. location, dates, times) for each camp found in the ```links.txt```.
 
@@ -77,7 +77,7 @@ Commute time is one of the most important factors when selecting camps. Since fu
 
 The final step filters the available camps to generate a report. We can see the full list of available options by looking at the report help command ```python camps.py report --help```.
 
-[gui_report_help.png]
+![](https://github.com/dlfelps/camp-little-scrape/blob/cb453b1a43840bc5f3bebcaf8e4ae50c8552d4a8/screenshots/gui_report_help.PNG)
 
 The filtering options for this step are as follows:
 
@@ -95,7 +95,7 @@ If your desired parameters are different from default, then change them when you
 
 This will produce an HTML file in the reports directory with all matching camps:
 
-[report.png]
+![](https://github.com/dlfelps/camp-little-scrape/blob/cb453b1a43840bc5f3bebcaf8e4ae50c8552d4a8/screenshots/report.PNG)
 
 The report is generated using the [yattag](https://www.yattag.org/) library to procedurally generate the HTML report from python code.
 A few highlights of the report:
