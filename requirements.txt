@@ -1,0 +1,8 @@
+yattag
+selenium
+httpx
+beautifulsoup4
+typer
+pandas
+tqdm
+jupyterlab
