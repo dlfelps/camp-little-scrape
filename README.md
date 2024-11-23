@@ -12,7 +12,7 @@ The goals of this project are to:
 ### FCPA site limitations
 Why is this tool needed? Because FCPA offers hundreds of potential camps to register for and their filter options are rather limited. Here is a screenshot of the FCPA camp search site:
 
-[fcpa_search.jpeg]
+![](https://github.com/dlfelps/camp-little-scrape/blob/521b0cc1c8ef6089643608997fc7358f82ee5f9d/screenshots/fcpa_search.jpeg)
 
 At first glance it the fields look reasonable. We should be able to narrow down the list of available camps and register for one. Let's see what happens if I try to find a camp for my 6 year old son for the two days after New Years Day (Jan 2-3).
 
