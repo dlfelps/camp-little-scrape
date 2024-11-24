@@ -29,7 +29,7 @@ I would like to build a tool that can output a tailored report to facilitate sel
 
 
 ### Installation
-1. Clone the repo (git clone https://github.com/dlfelps/blog-api.git)
+1. Clone the repo (git clone https://github.com/dlfelps/camp-little-scrape.git)
 2. Install dependencies (pip install -r requirements.txt)
 3. Install Chrome (https://www.google.com/chrome/)
 4. Sign up for a Google Maps API key (https://developers.google.com/maps)
