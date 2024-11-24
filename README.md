@@ -57,11 +57,11 @@ The first step in the process uses [Selenium](https://selenium-python.readthedoc
 This step produces a ```links.txt``` file containing all the camp session links.
 
 ##### Step 2 - Scrape camp details
-Steps 2-4 all use the command line gui provided by the camps.py file. It is built using [Typer](https://typer.tiangolo.com/). View the list of possible commands by calling ```python camps.py --help``` 
+Steps 2-4 all use the command line gui provided by the camp.py file. It is built using [Typer](https://typer.tiangolo.com/). View the list of possible commands by calling ```python camp.py --help``` 
 
 ![](https://github.com/dlfelps/camp-little-scrape/blob/cb453b1a43840bc5f3bebcaf8e4ae50c8552d4a8/screenshots/gui_help.PNG)
 
-Step 2 is initiated by calling ```python camps.py details```. This step scrapes the camp details (e.g. location, dates, times) for each camp found in the ```links.txt```.
+Step 2 is initiated by calling ```python camp.py details```. This step scrapes the camp details (e.g. location, dates, times) for each camp found in the ```links.txt```.
 
 ##### Step 3 - (optional) Calculate commutes
 
@@ -75,7 +75,7 @@ Commute time is one of the most important factors when selecting camps. Since fu
 
 ##### Step 4 - Filter camps and generate report
 
-The final step filters the available camps to generate a report. We can see the full list of available options by looking at the report help command ```python camps.py report --help```.
+The final step filters the available camps to generate a report. We can see the full list of available options by looking at the report help command ```python camp.py report --help```.
 
 ![](https://github.com/dlfelps/camp-little-scrape/blob/cb453b1a43840bc5f3bebcaf8e4ae50c8552d4a8/screenshots/gui_report_help.PNG)
 
@@ -91,7 +91,7 @@ The filtering options for this step are as follows:
 |  remove_schools |     N     |      True     |                      Camps located at schools are not shown                      |  --remove-schools |
 |    show_full    |     N     |     False     |               Camps that are already fully registered are not shown              |   --no-show-full  |
 
-If your desired parameters are different from default, then change them when you call the report command, e.g. ```python camps.py report "01/02/2025" "01/03/2025" --min-age=7```. 
+If your desired parameters are different from default, then change them when you call the report command, e.g. ```python camp.py report "01/02/2025" "01/03/2025" --min-age=7```. 
 
 This will produce an HTML file in the reports directory with all matching camps:
 
